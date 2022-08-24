@@ -1,0 +1,28 @@
+{
+	"CONTROLS": [
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "X Translation Amount",
+			"MAX": 2,
+			"MIN": -2,
+			"NAME": "x_trans_amt",
+			"TYPE": "slider",
+			"UI_GROUP": "default"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Y Translation Amount",
+			"MAX": 2,
+			"MIN": -2,
+			"NAME": "y_trans_amt",
+			"TYPE": "slider",
+			"UI_GROUP": "default"
+		}
+	],
+	"CREDIT": "TwoFlower",
+	"DESCRIPTION": "",
+	"HEIGHT": 1080,
+	"IMAGE_PATH": "test_scene.jpg",
+	"TITLE": "Test Scene",
+	"WIDTH": 1920
+}

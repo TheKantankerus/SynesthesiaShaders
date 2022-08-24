@@ -1,0 +1,55 @@
+{
+	"CONTROLS": [
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Rotation Count",
+			"MAX": 10,
+			"MIN": 0,
+			"NAME": "rotCount",
+			"TYPE": "slider",
+			"UI_GROUP": "rotation"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Rotation Mod",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "rotMod",
+			"TYPE": "toggle",
+			"UI_GROUP": "rotation"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Rotation Mod",
+			"MAX": 1,
+			"MIN": -1,
+			"NAME": "rotDirection",
+			"TYPE": "toggle",
+			"UI_GROUP": "rotation"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Rotation Mod Amount",
+			"MAX": 10,
+			"MIN": 0,
+			"NAME": "rotModAmount",
+			"TYPE": "slider",
+			"UI_GROUP": "rotation"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Rotation Mod",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "useDiff",
+			"TYPE": "toggle",
+			"UI_GROUP": "image"
+		}
+	],
+	"CREDIT": "Anonymous",
+	"DESCRIPTION": "",
+	"HEIGHT": 1080,
+	"IMAGE_PATH": "new_scene.png",
+	"TITLE": "New Scene",
+	"WIDTH": 1920
+}

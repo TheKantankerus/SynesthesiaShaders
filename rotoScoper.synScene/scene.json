@@ -46,10 +46,10 @@
 			"UI_GROUP": "image"
 		}
 	],
-	"CREDIT": "Anonymous",
+	"CREDIT": "TwoFlower",
 	"DESCRIPTION": "",
 	"HEIGHT": 1080,
-	"IMAGE_PATH": "new_scene.png",
-	"TITLE": "New Scene",
+	"IMAGE_PATH": "rotoscoper.png",
+	"TITLE": "RotoScoper",
 	"WIDTH": 1920
 }

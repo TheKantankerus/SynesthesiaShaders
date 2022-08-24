@@ -1,4 +1,4 @@
-float _piTime = 32 * PI * (0.5 + _triWave(TIME, 13 * PI));
+float _piTime = 32 * PI * (0.5 + _triWave(TIME, syn_BPM *PI));
 
 vec4 renderMain(void) {
   vec2 cart = _uvc;

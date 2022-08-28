@@ -1,0 +1,109 @@
+{
+	"CONTROLS": [
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Shape Weight",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "shapeWeight",
+			"TYPE": "toggle",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 2,
+			"DESCRIPTION": "Shape Power",
+			"MAX": 3,
+			"MIN": 2,
+			"NAME": "shapePower",
+			"TYPE": "toggle",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 0.2,
+			"DESCRIPTION": "Shape Size",
+			"MAX": 2,
+			"MIN": 0.1,
+			"NAME": "shapeSize",
+			"TYPE": "slider",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 0,
+			"DESCRIPTION": "Shape Osc",
+			"MAX": 2,
+			"MIN": 0,
+			"NAME": "shapeOscillation",
+			"TYPE": "toggle",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 0.01,
+			"DESCRIPTION": "Shape Fade",
+			"MAX": 2,
+			"MIN": 0.01,
+			"NAME": "shapeFade",
+			"TYPE": "slider",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 0,
+			"DESCRIPTION": "Swirl",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "swirl",
+			"TYPE": "toggle",
+			"UI_GROUP": "swirl"
+		},
+		{
+			"DEFAULT": 0,
+			"DESCRIPTION": "Morph Colours",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "morphColours",
+			"TYPE": "toggle",
+			"UI_GROUP": "swirl"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Swirl Direction",
+			"MAX": 1,
+			"MIN": -1,
+			"NAME": "swirlDirection",
+			"TYPE": "toggle",
+			"UI_GROUP": "swirl"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Swirl Amount",
+			"MAX": 3.5,
+			"MIN": 0.5,
+			"NAME": "swirlAmount",
+			"TYPE": "slider",
+			"UI_GROUP": "swirl"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Rotate Direction",
+			"MAX": 1,
+			"MIN": -1,
+			"NAME": "rotateDirection",
+			"TYPE": "toggle",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Swirl Repeats",
+			"MAX": 3,
+			"MIN": 0.2,
+			"NAME": "swirlRepeats",
+			"TYPE": "slider",
+			"UI_GROUP": "swirl"
+		}
+	],
+	"CREDIT": "TwoFlower",
+	"DESCRIPTION": "",
+	"HEIGHT": 1080,
+	"IMAGE_PATH": "singularity.png",
+	"TITLE": "Singularity",
+	"WIDTH": 1920
+}

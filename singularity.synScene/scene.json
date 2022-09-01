@@ -37,6 +37,15 @@
 			"UI_GROUP": "shape"
 		},
 		{
+			"DEFAULT": 0,
+			"DESCRIPTION": "Shape Media",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "mediaShape",
+			"TYPE": "toggle",
+			"UI_GROUP": "shape"
+		},
+		{
 			"DEFAULT": 0.01,
 			"DESCRIPTION": "Shape Fade",
 			"MAX": 2,

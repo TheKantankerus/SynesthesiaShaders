@@ -43,11 +43,14 @@ vec4 renderMain(void) {
   colour.b *= cos(pol.y);
   colour = fract(colour * 2);
   if (colour == vec3(0)) {
-    colour =
-        _loadUserImage(vec2(abs(_uvc.x), posSin(abs(_uvc.x), a / TIME))).xyz;
+    colour = mediaShape *
+             _loadUserImage(
+                 vec2(abs(pol.x) / (posSin(4, TIME / 15) + 0.1), pol.x / pol.y))
+                 .xyz;
+  } else {
+    colour = abs(fract(colour * 2) -
+                 2 * fract(_loadUserImage().xyz * posSin(1.5, TIME / 17)));
   }
-  colour = abs(fract(colour * 2) -
-               2 * fract(_loadUserImage().xyz * posSin(1.5, TIME / 17)));
   vec3 hsv = _rgb2hsv(colour);
   hsv.x *= 1 + (morphColours * syn_BPMSin4);
   colour = _hsv2rgb(hsv);

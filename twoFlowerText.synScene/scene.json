@@ -1,0 +1,77 @@
+{
+	"CONTROLS": [
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Glitch Letters",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "glitchLetters",
+			"TYPE": "toggle",
+			"UI_GROUP": "image"
+		},
+		{
+			"DEFAULT": 10,
+			"DESCRIPTION": "Glitch Factor",
+			"MAX": 40,
+			"MIN": 10,
+			"NAME": "glitchFactor",
+			"TYPE": "slider",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "No Osc",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "noOsc",
+			"TYPE": "toggle",
+			"UI_GROUP": "image"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Pixellation Mod",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "glitchyOsc",
+			"TYPE": "toggle",
+			"UI_GROUP": "image"
+		},
+		{
+			"DEFAULT": 4,
+			"DESCRIPTION": "Text Count",
+			"MAX": 10,
+			"MIN": 1,
+			"NAME": "textCount",
+			"TYPE": "slider",
+			"UI_GROUP": "shape"
+		},
+		{
+			"DEFAULT": 4,
+			"DESCRIPTION": "Spacing",
+			"MAX": 10,
+			"MIN": 1,
+			"NAME": "textSpacing",
+			"TYPE": "slider",
+			"UI_GROUP": "shape"
+		}
+	],
+	"CREDIT": "TwoFlower",
+	"DESCRIPTION": "",
+	"GPU": 0,
+	"HEIGHT": 2160,
+	"IMAGES": [
+		{
+			"NAME": "image49",
+			"PATH": "images/49ripple.png"
+		}
+	],
+	"IMAGE_PATH": "easy_text_in_shaders.png",
+	"MEDIA": [
+		{
+			"FILTER": "linear",
+			"WRAP": "repeat"
+		}
+	],
+	"TITLE": "TwoFlower Text",
+	"WIDTH": 3840
+}

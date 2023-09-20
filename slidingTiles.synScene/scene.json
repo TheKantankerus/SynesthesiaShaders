@@ -21,8 +21,8 @@
 	],
 	"CREDIT": "TwoFlower",
 	"DESCRIPTION": "",
-	"HEIGHT": 1080,
+	"HEIGHT": 2160,
 	"IMAGE_PATH": "test_scene.jpg",
 	"TITLE": "Test Scene",
-	"WIDTH": 1920
+	"WIDTH": 3840
 }

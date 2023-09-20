@@ -8,7 +8,7 @@ mat2 rotate2d(float _angle) {
 vec3 petals(vec2 position, float a, float r) {
   float f;
   if (altPetalShape == 1) {
-    float altR = 2. * PI / (4 * posSin(TIME / 4.));
+    float altR = 2. * PI / (4 * posSin(syn_BeatTime / 4.));
     float altA = (0.5 + posSin(TIME / 7.) / 2.) * a;
     f = pow(cos(floor(0.5 + altA / altR) * altR - altA) * length(position),
             petalPower / 2.0);
@@ -18,7 +18,7 @@ vec3 petals(vec2 position, float a, float r) {
     }
     return fract(output * petalWaves / 100.0);
   }
-  f = pow(cos((a * posSin(TIME / 7))), petalPower);
+  f = pow(cos((a * posSin(fract(TIME / 14)))), petalPower);
   return fract(vec3(smoothstep(f, f + r, r)) * petalWaves);
 }
 
@@ -38,9 +38,10 @@ vec4 renderMain(void) {
 
   centerPos *=
       rotate2d(cos(TIME * r) / ((4 * posSin(TIME / 8)) + r * r * sqrt(TIME)));
-  float a = atan(centerPos.x, centerPos.y) * clamp(2 * syn_HighLevel, 0.8, 1.2);
+  float a = atan(centerPos.x, centerPos.y) * clamp(2.0, 0.8, 1.2);
   vec3 petals = petals(centerPos, a, r);
-
-  vec4 toRender = vec4(rgbColours * fract(1 - petals * 8), 1.0);
-  return (_loadUserImage() + toRender) / 2;
+    
+    vec4 image = _loadUserImage();
+  vec4 toRender = vec4(fract(image.xyz * (1 - petals * 4* cos(syn_BeatTime/PI))), 1.0);
+  return max(image, toRender);
 }

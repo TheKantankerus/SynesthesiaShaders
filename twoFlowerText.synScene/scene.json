@@ -7,7 +7,7 @@
 			"MIN": 0,
 			"NAME": "glitchLetters",
 			"TYPE": "toggle",
-			"UI_GROUP": "image"
+			"UI_GROUP": "glitch"
 		},
 		{
 			"DEFAULT": 10,
@@ -16,7 +16,7 @@
 			"MIN": 10,
 			"NAME": "glitchFactor",
 			"TYPE": "slider",
-			"UI_GROUP": "shape"
+			"UI_GROUP": "glitch"
 		},
 		{
 			"DEFAULT": 1,
@@ -25,16 +25,16 @@
 			"MIN": 0,
 			"NAME": "noOsc",
 			"TYPE": "toggle",
-			"UI_GROUP": "image"
+			"UI_GROUP": "layout"
 		},
 		{
-			"DEFAULT": 1,
-			"DESCRIPTION": "Pixellation Mod",
+			"DEFAULT": 0,
+			"DESCRIPTION": "Glitchy Osc",
 			"MAX": 1,
 			"MIN": 0,
 			"NAME": "glitchyOsc",
 			"TYPE": "toggle",
-			"UI_GROUP": "image"
+			"UI_GROUP": "glitch"
 		},
 		{
 			"DEFAULT": 4,
@@ -43,7 +43,7 @@
 			"MIN": 1,
 			"NAME": "textCount",
 			"TYPE": "slider",
-			"UI_GROUP": "shape"
+			"UI_GROUP": "layout"
 		},
 		{
 			"DEFAULT": 4,
@@ -52,7 +52,16 @@
 			"MIN": 1,
 			"NAME": "textSpacing",
 			"TYPE": "slider",
-			"UI_GROUP": "shape"
+			"UI_GROUP": "layout"
+		},
+		{
+			"DEFAULT": 0,
+			"DESCRIPTION": "Font Selector",
+			"MAX": 4,
+			"MIN": 0,
+			"NAME": "fontSelector",
+			"TYPE": "slider",
+			"UI_GROUP": "font"
 		}
 	],
 	"CREDIT": "TwoFlower",
@@ -61,8 +70,16 @@
 	"HEIGHT": 2160,
 	"IMAGES": [
 		{
-			"NAME": "image49",
-			"PATH": "images/49ripple.png"
+			"NAME": "spacemono",
+			"PATH": "images/twoflower_spacemono.jpg"
+		},
+		{
+			"NAME": "canterbury",
+			"PATH": "images/twoflower_canterbury.jpg"
+		},
+		{
+			"NAME": "telegramma",
+			"PATH": "images/twoflower_telegramma.jpg"
 		}
 	],
 	"IMAGE_PATH": "easy_text_in_shaders.png",

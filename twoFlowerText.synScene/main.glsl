@@ -25,13 +25,20 @@ int getLetter(int i) {
 }
 
 sampler2D getFont() {
-  if (fontSelector > 3.0) {
-    return wingdings
+  int fontPick = int(fontSelector);
+
+  if (glitchLetters > 0 && _statelessContinuousChaotic(TIME) > 0.8) {
+    fontPick += int(TIME / 5);
+    fontPick = fontPick % 4;
   }
-  if (fontSelector > 2.0) {
+
+  if (fontPick > 3.0) {
+    return wingdings;
+  }
+  if (fontPick > 2.0) {
     return telegramma;
   }
-  if (fontSelector > 1.0) {
+  if (fontPick > 1.0) {
     return canterbury;
   }
   return spacemono;

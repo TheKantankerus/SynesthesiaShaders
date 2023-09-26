@@ -25,6 +25,9 @@ int getLetter(int i) {
 }
 
 sampler2D getFont() {
+  if (fontSelector > 3.0) {
+    return wingdings
+  }
   if (fontSelector > 2.0) {
     return telegramma;
   }

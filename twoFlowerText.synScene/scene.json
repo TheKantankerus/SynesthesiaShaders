@@ -80,6 +80,10 @@
 		{
 			"NAME": "telegramma",
 			"PATH": "images/twoflower_telegramma.jpg"
+		},
+		{
+			"NAME": "wingdings",
+			"PATH": "images/twoflower_wingdings.jpg"
 		}
 	],
 	"IMAGE_PATH": "easy_text_in_shaders.png",

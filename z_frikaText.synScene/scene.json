@@ -1,0 +1,90 @@
+{
+	"CONTROLS": [
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "Glitch Letters",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "glitchLetters",
+			"TYPE": "toggle",
+			"UI_GROUP": "glitch"
+		},
+		{
+			"DEFAULT": 10,
+			"DESCRIPTION": "Glitch Factor",
+			"MAX": 40,
+			"MIN": 10,
+			"NAME": "glitchFactor",
+			"TYPE": "slider",
+			"UI_GROUP": "glitch"
+		},
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "No Osc",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "noOsc",
+			"TYPE": "toggle",
+			"UI_GROUP": "layout"
+		},
+		{
+			"DEFAULT": 0,
+			"DESCRIPTION": "Glitchy Osc",
+			"MAX": 1,
+			"MIN": 0,
+			"NAME": "glitchyOsc",
+			"TYPE": "toggle",
+			"UI_GROUP": "glitch"
+		},
+		{
+			"DEFAULT": 4,
+			"DESCRIPTION": "Text Count",
+			"MAX": 10,
+			"MIN": 1,
+			"NAME": "textCount",
+			"TYPE": "slider",
+			"UI_GROUP": "layout"
+		},
+		{
+			"DEFAULT": 4,
+			"DESCRIPTION": "Spacing",
+			"MAX": 10,
+			"MIN": 1,
+			"NAME": "textSpacing",
+			"TYPE": "slider",
+			"UI_GROUP": "layout"
+		},
+		{
+			"DEFAULT": 0,
+			"DESCRIPTION": "Font Selector",
+			"MAX": 4,
+			"MIN": 0,
+			"NAME": "fontSelector",
+			"TYPE": "slider",
+			"UI_GROUP": "font"
+		}
+	],
+	"CREDIT": "TwoFlower",
+	"DESCRIPTION": "",
+	"GPU": 0,
+	"HEIGHT": 2160,
+	"IMAGES": [
+		{
+			"NAME": "ruthless",
+			"PATH": "images/ruthless.png"
+		},
+		{
+			"NAME": "rubik",
+			"PATH": "images/rubik.png"
+		}
+	],
+	"IMAGE_PATH": "easy_text_in_shaders.png",
+	"MEDIA": [
+		{
+			"FILTER": "linear",
+			"WRAP": "repeat"
+		}
+	],
+	"TITLE": "AA Frika Text",
+	"WIDTH": 3840
+}

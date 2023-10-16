@@ -17,7 +17,7 @@ vec2 oscOffset(int i, float ratio) {
 int getLetter(int i) {
   if (glitchLetters > 0) {
     return i +
-           int(_statelessContinuousChaotic(TIME + i / 500.0) * glitchFactor *
+           int(_statelessContinuousChaotic(TIME / 500.0) * glitchFactor *
                _sqPulse(0.2, sin(TIME + i), 0.1)) %
                14;
   }
@@ -27,9 +27,9 @@ int getLetter(int i) {
 sampler2D getFont() {
   int fontPick = int(fontSelector);
 
-  if (glitchLetters > 0 && _statelessContinuousChaotic(TIME) > 0.8) {
-    fontPick += int(TIME / 5);
-    fontPick = fontPick % 4;
+  if (glitchLetters > 0 && _nsin(syn_BeatTime) > 0.8) {
+    fontPick += 2;
+    fontPick = fontPick % 5;
   }
 
   if (fontPick > 3.0) {
@@ -47,12 +47,11 @@ sampler2D getFont() {
 vec4 getChar(vec2 pos, int i, int j) {
   int letter = getLetter(i) + int(11 * sin(j * TIME / 10.0));
   int diff = letter - i;
-  return texture(
-      getFont(),
-      _nclamp(vec2(fract(pos.x + diff / 14.0),
-                   (pos.y - 0.1) * 6 -
-                       oscOffset(i + j, 2.0 + j * textSpacing / textCount).y +
-                       j)));
+  float xpos = fract(pos.x + diff / 14.0);
+  float ypos = (((pos.y - 0.1) * 6 -
+                 oscOffset(i + j, 2.0 + j * textSpacing / textCount).y + j));
+  vec2 newpos = _nclamp(vec2(xpos, ypos));
+  return texture(getFont(), newpos);
 }
 
 vec4 renderMain() {
@@ -63,7 +62,7 @@ vec4 renderMain() {
       for (int j = 0; j < textCount; j++) {
         vec4 fontText = getChar(pos, i, j);
         fontText.b += fontText.r;
-        col *= fontText.b;
+        col *= smoothstep(fontText.b, 0.00, 0.025);
       }
     }
     if (col == vec4(0.0)) {

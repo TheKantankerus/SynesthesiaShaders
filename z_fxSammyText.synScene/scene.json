@@ -1,7 +1,7 @@
 {
 	"CONTROLS": [
 		{
-			"DEFAULT": 1,
+			"DEFAULT": 0,
 			"DESCRIPTION": "Glitch Letters",
 			"MAX": 1,
 			"MIN": 0,

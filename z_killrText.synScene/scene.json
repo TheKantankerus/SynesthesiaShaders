@@ -71,11 +71,11 @@
 	"IMAGES": [
 		{
 			"NAME": "ruthless",
-			"PATH": "images/ruthless.png"
+			"PATH": "images/ranger_condensed.png"
 		},
 		{
 			"NAME": "rubik",
-			"PATH": "images/rubik.png"
+			"PATH": "images/ranger_gradient.png"
 		}
 	],
 	"IMAGE_PATH": "easy_text_in_shaders.png",
@@ -85,6 +85,6 @@
 			"WRAP": "repeat"
 		}
 	],
-	"TITLE": "AA Frika Text",
+	"TITLE": "AA KillR Text",
 	"WIDTH": 3840
 }

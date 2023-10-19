@@ -70,12 +70,12 @@
 	"HEIGHT": 2160,
 	"IMAGES": [
 		{
-			"NAME": "ruthless",
-			"PATH": "images/ruthless.png"
+			"NAME": "sonic",
+			"PATH": "images/docallisme.png"
 		},
 		{
-			"NAME": "rubik",
-			"PATH": "images/rubik.png"
+			"NAME": "marker",
+			"PATH": "images/bitch_slap.png"
 		}
 	],
 	"IMAGE_PATH": "easy_text_in_shaders.png",
@@ -85,6 +85,6 @@
 			"WRAP": "repeat"
 		}
 	],
-	"TITLE": "AA Frika Text",
+	"TITLE": "AA Riality Text",
 	"WIDTH": 3840
 }

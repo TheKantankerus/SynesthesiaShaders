@@ -1,0 +1,26 @@
+{
+	"CONTROLS": [
+		{
+			"DEFAULT": 1,
+			"DESCRIPTION": "i Offset",
+			"MAX": 10,
+			"MIN": 1,
+			"NAME": "iterOffset",
+			"TYPE": "slider",
+			"UI_GROUP": "default"
+		}
+	],
+	"CREDIT": "TwoFlower",
+	"DESCRIPTION": "",
+	"GPU": 0,
+	"HEIGHT": 1080,
+	"IMAGE_PATH": "new_scene.png",
+	"MEDIA": [
+		{
+			"FILTER": "linear",
+			"WRAP": "repeat"
+		}
+	],
+	"TITLE": "Julia Jam",
+	"WIDTH": 1920
+}
